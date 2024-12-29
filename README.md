@@ -1,61 +1,55 @@
-<<<<<<< HEAD
 <img src="AskGina_AI_Brain_Logo copy.jpeg" alt="alt text" width="400" height="400"/>
 
-# Ask Gina Alt for Solana
-## AI-Powered in-feed assistant on Solana to help with on-chain data
-### Overview
+# Ask Gina Alt for Solana  
+## AI-Powered In-Feed Assistant for On-Chain Data**  
 
-Ask Gina alt for Solana is an AI-powered in-feed assistant designed to streamline access to on-chain data for the Solana blockchain network. Positioned under the "Social and Chat Agents" category, it offers a seamless way for users to interact with and retrieve blockchain information.
+## Overview  
+Ask Gina Alt for Solana is an AI-powered in-feed assistant that streamlines access to on-chain data for the Solana blockchain. Positioned under the "Social and Chat Agents" category, it simplifies interaction with blockchain data, enhancing usability for technical and non-technical users.  
 
-### Purpose
+## Purpose  
+The project aims to:  
+- Simplify access to complex on-chain data.  
+- Enhance user experience for the Solana community.  
+- Support blockchain workflows with real-time insights.  
 
-The primary purpose of Ask Gina alt is to provide a user-friendly and efficient mechanism for querying and understanding Solana’s blockchain data. By leveraging artificial intelligence, this assistant aims to:
+## Features  
+- **AI-Powered Assistance**: Uses advanced machine learning models for accurate responses.  
+- **Real-Time On-Chain Data**: Provides insights into block details, transactions, and key metrics.  
+- **Seamless Integration**: Fully compatible with Solana's ecosystem for precise, context-aware interaction.  
 
-- Simplify access to complex on-chain data.
+## Use Cases  
+- **Blockchain Analytics**: Retrieve insights on blocks, transactions, and other metrics.  
+- **User Support**: Answer Solana-related queries in a conversational format.  
+- **Development Aid**: Assist developers with technical data for Solana-based projects.  
 
-- Enhance the user experience for both technical and non-technical audiences.
+## Setup Guide  
 
-- Support blockchain-based workflows by delivering relevant insights.
+### 1. Create a Stream on QuickNode  
+- Set up a stream on QuickNode and configure the destination to the webhook route in your Flask app.  
 
-### Features
+### 2. Host the Webhook  
+- Use Flask to handle incoming POST requests.  
+- Expose the webhook to the internet using tools like ngrok.  
 
-1. **AI-Powered Assistance**
+### 3. Configure Webhook to Handle Data  
+- Process incoming data using the Flask app and integrate it with Ask Gina's brain (compiled graph).  
 
-    - Utilizes advanced machine learning models to provide accurate and timely responses.
+### 4. Test the Workflow  
+- Use Streamlit and the `test_app.py` script to validate that data is received and processed correctly.  
+- Monitor the server during initial tests for any issues.  
 
-2. **Real-Time On-Chain Data**
+## Results and Testing 
+Here I validate the seamless flow of data from the QuickNode stream to the Flask app, ensuring that real-time on-chain data is processed and displayed correctly. Screenshots below capture the successful data reception and processing, confirming that the workflow is functioning as expected.
 
-    - Offers insights into real-time data such as block details, transactions, and other relevant blockchain metrics.
+![alt text](image.png) 
 
-3. **Integration with Solana Ecosystem**
 
-    - Tailored to work seamlessly with Solana’s infrastructure, ensuring precise and context-aware responses.
+## Acknowledgments   
+I would like to thank the following resources and tools that contributed to the success of this project:  
 
-### Use Cases
-
-- **Blockchain Analytics:** Retrieve information on blocks, transactions, and other key metrics.
-
-- **User Support:** Assist users with common Solana-related queries in a conversational format.
-
-- **Development Aid:** Aid developers working on Solana-based projects by providing easy access to technical data.
-
-## How to set it up
-
-1. **Create a stream on QuickNode**  
-   - First, create a Stream on QuickNode and set the destination to the webhook route you created on your flask app.  
-   - This allows you to send data from the stream to your endpoint for processing.
-
-2. **Host the Webhook**  
-   - Host the webhook on a server or cloud provider, ensuring it can accept incoming POST requests.
-   - You can use a simple web framework like I did using Flask to handle these requests and exposing it to the internet using ngrok so it can receive data from QuickNode.
-
-3. **Configure Webhook to Handle Data**  
-   - Set up the Flask app/webhook to process the incoming data and interact with the rest of the application logic, such as calling APIs or invoking Gina. 
-
-4. **Integrate with AskGina's brain which is the compiled graph**  
-   - Connect the webhook to AskGina's brain (graph) to process the data and generate responses.
-
-5. **Testing**  
-   - Deploying and testing the server and the flow to confirm that data from QuickNode Streams is being received and processed correctly using streamlit the `test_app.py`.
-   - You may also want to monitor the server for any issues, especially during initial tests.
+- **QuickNode** for enabling reliable blockchain streaming capabilities.  
+- **Flask** for providing a simple yet powerful web framework.  
+- **Streamlit** for its interactive interface used in testing and validation.  
+- **Solana Ecosystem** for the robust blockchain network and data access.  
+- **Bounty documentation** for guiding the integration of QuickNode with Flask.
 
