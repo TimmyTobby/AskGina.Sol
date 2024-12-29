@@ -1,0 +1,9 @@
+# Ignore .env file
+.env
+
+# Ignore folder named 'unused file'
+Unused\ files/
+
+# Ignore folder named 'solenv'
+solenv/
+
