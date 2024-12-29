@@ -41,7 +41,7 @@ The project aims to:
 ## Results and Testing 
 Here I validate the seamless flow of data from the QuickNode stream to the Flask app, ensuring that real-time on-chain data is processed and displayed correctly. Screenshots below capture the successful data reception and processing, confirming that the workflow is functioning as expected.
 
-![alt text](image.png) 
+![Interactive Display](Display.png) 
 
 
 ## Acknowledgments   
